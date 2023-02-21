@@ -12,29 +12,15 @@ int main()
     string riga;
     string rigaVuota = "";
     int i = 1;
+    
 
     while (getline(in, riga))
     {
-        if (riga == "")
-        {
-            out << endl;
-        }
-        else if (i < 10)
-        {
-            out << i << "   - " << riga << endl;
-            i++;
-        }
-        else if (i < 100)
-        {
-            out << i << "  - " << riga << endl;
-            i++;
-        }
-        else
+        if ( riga != rigaVuota)
         {
             out << i << " - " << riga << endl;
             i++;
         }
-        
     }
 
     in.close();
